@@ -1,8 +1,20 @@
-use clap::Parser;
+use clap::{Args, Parser, Subcommand};
 
-#[derive(Debug, Parser)]
-#[command(version, about, long_about = None)]
+#[derive(Parser)]
+#[command(author, version, about, long_about = None)]
+#[command(propagate_version = true)]
 pub struct Cli {
+    #[command(subcommand)]
+    pub command: Commands,
+}
+
+#[derive(Subcommand)]
+pub enum Commands {
+    Add(Add),
+}
+
+#[derive(Args)]
+pub struct Add {
     #[arg(short, long)]
     pub file: String,
 
