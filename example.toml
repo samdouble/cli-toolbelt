@@ -1,0 +1,8 @@
+[config]
+ip = "42.69.42.0"
+port = 42
+
+[generate.uuid]
+code = """
+python -c 'import uuid; print(str(uuid.uuid4()).lower())'
+"""

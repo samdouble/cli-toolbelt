@@ -1,5 +1,5 @@
 # cli-toolbelt
 
 ```
-cargo run -- --file Cargo.toml --num 5
+cargo run add --file Cargo.toml --num 5
 ```
