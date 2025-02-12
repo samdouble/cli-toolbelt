@@ -1,9 +1,10 @@
 use clap::Parser;
-use dirs;
 use std::{error::Error, fs::read_to_string};
 
 mod cli;
 use cli::{Cli, Commands};
+mod config;
+use config::read_toml;
 
 fn main() -> Result<(), Box<dyn Error>> {
     let args = Cli::parse();
@@ -12,8 +13,7 @@ fn main() -> Result<(), Box<dyn Error>> {
             println!("{}", args.file);
             println!("{}", args.num);
 
-            println!("{}", dirs::home_dir().unwrap().display().to_string());
-            println!("{}", dirs::config_dir().unwrap().display().to_string());
+            read_toml("example.toml");
 
             read_to_string(&args.file)?
                 .lines()
