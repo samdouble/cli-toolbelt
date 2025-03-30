@@ -1,6 +1,5 @@
 use std::fs;
 use std::process::exit;
-use toml;
 
 pub fn read_toml(filename: &str) {
     let contents = match fs::read_to_string(filename) {
