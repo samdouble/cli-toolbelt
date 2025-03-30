@@ -1,0 +1,8 @@
+{
+  "last-release-sha": "d0e4cb48808945c995dd4d578d9577ad695202c1",
+  "packages": {
+    ".": {
+      "release-type": "rust"
+    }
+  }
+}
