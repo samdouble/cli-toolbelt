@@ -1,7 +1,9 @@
 [package]
 name = "cli-toolbelt"
 version = "0.1.0"
+description = "A CLI tool to facilitate access to frequently used commands and scripts"
 edition = "2021"
+license = "Apache-2.0"
 
 [dependencies]
 clap = { version = "4.5.28", features = ["derive"] }
