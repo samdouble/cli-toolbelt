@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/samdouble/cli-toolbelt/compare/v0.1.0...v0.1.1) (2025-04-01)
+
+
+### Bug Fixes
+
+* add mandatory license and description ([f640a14](https://github.com/samdouble/cli-toolbelt/commit/f640a14856697493410405ad7c0b1e478c161a6b))
+
 ## 0.1.0 (2025-03-30)
 
 
